@@ -12665,9 +12665,14 @@ p {
 }
 
 #mainNav {
+  --logo-color-1: #32faff;
+  --logo-color-2: #d7feff;
+
   padding-top: 1rem;
   padding-bottom: 1rem;
   background-color: #212529;
+  background-color: rgb(18 60 132 / 90%);
+  backdrop-filter: blur(8px);
 }
 
 #mainNav .navbar-toggler {
@@ -12686,7 +12691,7 @@ p {
   text-transform: uppercase;
 }
 
-#mainNav .navbar-brand>* {
+#mainNav .navbar-brand .logo {
   height: 1.5rem;
   width: auto;
 }
@@ -12714,9 +12719,6 @@ p {
   }
 
   #mainNav .navbar-brand {
-    --logo-color-1: #32faff;
-    --logo-color-2: #d7feff;
-
     font-size: 1.5em;
     transition: font-size 0.3s ease-in-out;
   }
